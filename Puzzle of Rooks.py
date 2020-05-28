@@ -1,4 +1,16 @@
-# 95.83% correct. Exceeds 2050 operations
+# This is small AI algorithm created to solve a problem in IEEE Xtreme 13.0 (Puzzle of Rooks).
+# Link - https://csacademy.com/contest/ieeextreme-practice/task/puzzle-of-rooks
+# Inputs - Initial positions of the rooks
+# Constraints   - Rooks can be moved in x and y directions (not in diagonals)
+#               - Any two rooks cannot share the same row or column
+#               - Chessboard is infinitely large
+#               - All the initial positions and target positions are given within the ranges 1<=x<=99 and 1<=y<=99
+#Operations 1) You can move the rooks in four directions (left-L,right-R,up-U and down-D)
+#           2) You can take-T(remove) one rook at a time from its current position and mark the position.
+#           3) You can put-P the removed rook back to the position where you took it. But you can only take one rook out of the chess board and you should put it back before you take
+#               another rook from the board.
+# Task - Move the rooks from their initial position to target position.
+
 def Move_X_Initials(N, initialCells, targetCells, xMax):
     # Rearrange rooks
     operations = []
